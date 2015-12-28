@@ -51,6 +51,12 @@
 							<input size="20" type="text" name="電話番号" placeholder="01-2345-6789">
 						</td>
 					</tr>
+					<tr>
+						<th>Mail</th>
+						<td>
+							<input size="20" type="text" name="email" placeholder="j-trip@a.com">
+						</td>
+					</tr>
 				</form>
 			</div>
 		</div>
