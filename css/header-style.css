@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 260px;
+	height: 1000px;
+	background: #323232;
+	color: #fff;
+	font-family: "liberation_sans","Open Sans","ヒラギノ角ゴ ProN W6","Hiragino Kaku Gothic ProN",Meiryo,メイリオ,sans-serif;
+
+}
+
+.header h1{
+	//display: none;
+	//background-image: url(./img/logo.jpg);
+	text-align: center;
+}
+
+.navigation li{
+	list-style: none;
+	padding: 20px 10px;
+	text-align: right;
+}
+
+.navigation li a{
+		color: #ccc;
+		font-size: 1em;
+		font-weight: bold;
+		letter-spacing: 1px;
+		text-decoration: none;
+}
+
+
