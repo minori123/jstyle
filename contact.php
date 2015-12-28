@@ -18,7 +18,7 @@
 					必須の項目は必ずご記入ください。
 				</p>
 				<form>
-					<h3>ご用件</h3>
+					<!--<h3>ご用件</h3>
 					<p>
 						<select name="ご用件">
 								<option value>選択してください</option>
@@ -28,7 +28,8 @@
 					</p>
 					<h3>お名前</h3>
 					<p><input size="20" type="text" name="名前" placeholder="山田　太郎" required></p>
-					<!--<tr>
+					-->
+					<tr>
 						<th>ご用件</th>
 						<td>
 							<select name="ご用件">
@@ -50,7 +51,7 @@
 							<input size="20" type="text" name="電話番号" placeholder="01-2345-6789">
 						</td>
 					</tr>
-				</form>-->
+				</form>
 			</div>
 		</div>
 		
