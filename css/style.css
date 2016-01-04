@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 .clearfix:after{ 
-    display: block; 
+	display: block; 
 	clear: both; 
-    height: 0; 
-    font-size:0;    
-    visibility:hidden;
+	height: 0; 
+	font-size: 0;
+	visibility: hidden;
 	content: ".";
 }
 
@@ -25,17 +25,34 @@ body{
 }
 
 /*トップページ*/
-.wrapper{
+/*.wrapper{
 	width: 100%;
-	height: auto;
+	height: 800px;
 	background-image: url(../img/top.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }*/
 
-/*.wrapper > h2{
+.wrapper > h2{
 	margin: 0;
 	opacity: 0.7;
+}
+
+/*.top_catch{
+	color: #fff;
+	position: relative;
+	top: 20px;
+	//font-size: 2em;
+}
+
+.top_catch > h3{
+	margin: 0;
+	font-size: 2em;
+}
+
+.top_catch > p{
+	margin: 0;
+	font-size: 3em;
 }*/
 
 /*ヘッダー*/
@@ -48,7 +65,7 @@ body{
 	height: 800px;
 	background: #323232;
 	color: #fff;
-	font-family: "liberation_sans","Open Sans","ヒラギノ角ゴ ProN W6","Hiragino Kaku Gothic ProN",Meiryo,メイリオ,sans-serif;
+	//font-family: "liberation_sans","Open Sans","ヒラギノ角ゴ ProN W6","Hiragino Kaku Gothic ProN",Meiryo,メイリオ,sans-serif;
 
 }
 
@@ -65,11 +82,11 @@ body{
 }
 
 .navigation li a{
-		color: #ccc;
-		font-size: 1em;
-		font-weight: bold;
-		letter-spacing: 1px;
-		text-decoration: none;
+	color: #ccc;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
 }
 
 
@@ -101,7 +118,17 @@ body{
 	letter-spacing: 1em;
 	}
 
-/*内容*/	
+/*内容*/
+.article{
+	width: 70%;
+	margin: 0 auto;
+	//background: yellow;
+}
+
+.article > h3:before{
+	content: "●";
+}
+
 .article > table{
 	width: 100%;
 	margin: 30px;
@@ -129,16 +156,6 @@ body{
 
 	
 /*使い方*/
-.article{
-	width: 70%;
-	margin: 0 auto;
-	//background: yellow;
-}
-
-.article > h3:before{
-	content: "●";
-}
-
 .movie{
 	border-top: 1px dotted #000;
 	border-bottom: 1px dotted #000; 
@@ -156,20 +173,20 @@ body{
 
 .article .date{
 	width: 20%;
-	border-bottom: 1px dotted #000;
-	color: red;
+	//border-bottom: 1px dotted #000;
+	//color: red;
 	text-align: center;
 }
 
 .article .place{
 	width: 15%;
-	border-bottom: 1px dotted #000;
+	//border-bottom: 1px dotted #000;
 	text-align: center;
 }
 
 .article .event{
 	width: 65%;
-	border-bottom: 1px dotted #000;
+	//border-bottom: 1px dotted #000;
 	//text-align: center;
 }
 
@@ -178,6 +195,11 @@ body{
 
 
 /*写真館*/
+.pics{
+	margin: 0 auto;
+	width: 90%;
+}
+
 .pic{
 	float: left;
 	margin: 10px 1%;
