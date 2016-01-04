@@ -8,7 +8,7 @@
 	<body>
 		<div class="wrapper">
 			<?php include "header.php" ?>
-			<h2>ロゴ予定</h2>
+			<h2><img src="./img/top.jpg" width="100%" height="auto" alt="トップ画像"></h2>
 			<p>買って良かったではなく、<br>早く買えば良かった・・・</p>
 		</div>
 		

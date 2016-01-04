@@ -24,6 +24,20 @@ body{
 //background: linear-gradient(112deg, rgb(0, 0, 0) 18%, rgb(219, 0, 0) 100%);
 }
 
+/*トップページ*/
+.wrapper{
+	width: 100%;
+	height: auto;
+	background-image: url(../img/top.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+
+/*.wrapper > h2{
+	margin: 0;
+	opacity: 0.7;
+}*/
+
 /*ヘッダー*/
 .header{
 	position: absolute;
@@ -31,7 +45,7 @@ body{
 	left: 0;
 	z-index: 1;
 	width: 260px;
-	height: 1000px;
+	height: 800px;
 	background: #323232;
 	color: #fff;
 	font-family: "liberation_sans","Open Sans","ヒラギノ角ゴ ProN W6","Hiragino Kaku Gothic ProN",Meiryo,メイリオ,sans-serif;
@@ -86,6 +100,33 @@ body{
 	text-align: center;
 	letter-spacing: 1em;
 	}
+
+/*内容*/	
+.article > table{
+	width: 100%;
+	margin: 30px;
+	border: 1px solid;
+}
+
+.article th{
+	width: 30%;
+	padding: 10px 1%;
+	border-right: 1px solid;	
+}
+
+.article tr:not(:last-child) th{
+	border-bottom: 1px dotted;
+}
+
+.article td{
+	width:70%;
+	padding: 10px 1%;	
+}
+
+.article tr:not(:last-child) td{
+	border-bottom: 1px dotted;
+}
+
 	
 /*使い方*/
 .article{
@@ -132,6 +173,10 @@ body{
 	//text-align: center;
 }
 
+/*イベントスケジュール*/
+
+
+
 /*写真館*/
 .pic{
 	float: left;
@@ -142,30 +187,6 @@ body{
 }
 
 /*会社概要*/
-.article > table{
-	width: 100%;
-	margin: 30px;
-	border: 1px solid;
-}
-
-.article th{
-	width: 30%;
-	padding: 10px 1%;
-	border-right: 1px solid;	
-}
-
-.article tr:not(:last-child) th{
-	border-bottom: 1px dotted;
-}
-
-.article td{
-	width:70%;
-	padding: 10px 1%;	
-}
-
-.article tr:not(:last-child) td{
-	border-bottom: 1px dotted;
-}
 
 
 /*フッター*/
