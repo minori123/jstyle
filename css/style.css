@@ -65,7 +65,6 @@ body{
 }
 
 .top{
-	//top: 0;
 	width: 100%;
 	height: 250px;
 	background: rgb(0, 0, 0);
@@ -74,7 +73,6 @@ body{
 	background: -o-linear-gradient(22deg, rgb(0, 0, 0) 18%, rgb(219, 0, 0) 100%);
 	background: -ms-linear-gradient(22deg, rgb(0, 0, 0) 18%, rgb(219, 0, 0) 100%);
 	background: linear-gradient(112deg, rgb(0, 0, 0) 18%, rgb(219, 0, 0) 100%);
-
 }
 
 .top_inside > h3{
@@ -88,6 +86,38 @@ body{
 	
 	
 /*製品一覧*/
+.product > h3{
+	border: 2px solid;
+	border-radius: 10px;
+	//border-left: 5px solid;
+	font-size: 2em;
+	//content:"●";
+}
+
+.prod{
+	border-bottom: 1px solid;
+}
+
+.title{
+	border-bottom: 1px dotted;
+}
+
+.title > h3:first-child{
+	//color:red;
+	float: left;
+	margin-bottom: 0;
+}
+
+.title > h3:first-child:before{
+	content:"●";
+}
+
+.title > h3:last-child{
+	//color:blue;
+	float: right;
+	margin-bottom: 0;
+}
+
 .products > h3{
 	text-align: center;
 }
@@ -105,7 +135,9 @@ body{
 	background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(50%, rgba(128,0,0,1)), color-stop(51%, rgba(128,49,0,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
 	background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
-	color: #fff;
+	background: -o-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* ie10+ */
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* w3c */	color: #fff;
 	font-weight: bold;
 	text-align: center;
 }
@@ -122,15 +154,39 @@ body{
 .prodphoto{
 	float: left;
 	width: 50%;
+	margin: 10px 0 0 0;
+}
+
+.prodphoto td {
+	width: 30%;
+	margin: 0 1%;
+	border: 1px solid;
+	border-radius: 10px;
+	background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(50%, rgba(128,0,0,1)), color-stop(51%, rgba(128,49,0,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* ie10+ */
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(128,49,0,1) 49%, rgba(128,0,0,1) 50%, rgba(0,0,0,1) 100%); /* w3c */	text-align: center;
+}
+
+.prodphoto td a{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .prodtext{
 	float: left;
 	width: calc(50% - 1.5%);
-	margin: 0 0 0 1.5%;
+	margin: 10px 0 0 1.5%;
 }
 
-.prodtext > p:nth-child(4){
+.prodtext > p:first-child{
+	border-bottom: 1px solid;
+}
+
+.prodtext > p:last-of-type{
 	margin: 0;
 }
 
@@ -138,93 +194,62 @@ body{
 	margin: 0 1%;
 }
 
-
-.green{
+.design{
 	width: 50px;
 	height: 50px;
+	border: 1px solid;
 	border-radius: 10px;
-	//border: 1px solid;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+	
+}
+
+.green{
 	background: -moz-linear-gradient(45deg, rgba(123,198,35,1) 0%, rgba(255,255,255,1) 50%, rgba(123,198,35,1) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(123,198,35,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(123,198,35,1))); /* safari4+,chrome */
 	background: -webkit-linear-gradient(45deg, rgba(123,198,35,1) 0%, rgba(255,255,255,1) 50%, rgba(123,198,35,1) 100%); /* safari5.1+,chrome10+ */
 	background: -o-linear-gradient(45deg, rgba(123,198,35,1) 0%, rgba(255,255,255,1) 50%, rgba(123,198,35,1) 100%); /* opera 11.10+ */
 	background: -ms-linear-gradient(45deg, rgba(123,198,35,1) 0%, rgba(255,255,255,1) 50%, rgba(123,198,35,1) 100%); /* ie10+ */
 	background: linear-gradient(45deg, rgba(123,198,35,1) 0%, rgba(255,255,255,1) 50%, rgba(123,198,35,1) 100%); /* w3c */
-	//color: #fff;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	line-height: 50px;
-	text-align: center;
-	text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
 }
 
 .red{
-	width: 50px;
-	height: 50px;
-	border-radius: 10px;
-	background: red;
 	background: -moz-linear-gradient(45deg, rgba(255,19,39,1) 0%, rgba(255,255,255,1) 50%, rgba(255,19,39,1) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,19,39,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(255,19,39,1))); /* safari4+,chrome */
 	background: -webkit-linear-gradient(45deg, rgba(255,19,39,1) 0%, rgba(255,255,255,1) 50%, rgba(255,19,39,1) 100%); /* safari5.1+,chrome10+ */
 	background: -o-linear-gradient(45deg, rgba(255,19,39,1) 0%, rgba(255,255,255,1) 50%, rgba(255,19,39,1) 100%); /* opera 11.10+ */
 	background: -ms-linear-gradient(45deg, rgba(255,19,39,1) 0%, rgba(255,255,255,1) 50%, rgba(255,19,39,1) 100%); /* ie10+ */
 	background: linear-gradient(45deg, rgba(255,19,39,1) 0%, rgba(255,255,255,1) 50%, rgba(255,19,39,1) 100%); /* w3c */
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	line-height: 50px;
-	text-align: center;
-	text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
 }
 
 .orange{
-	width: 50px;
-	height: 50px;
-	border-radius: 10px;
 	background: -moz-linear-gradient(45deg, rgba(239,156,2,1) 0%, rgba(255,255,255,1) 50%, rgba(239,156,2,1) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(239,156,2,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(239,156,2,1))); /* safari4+,chrome */
 	background: -webkit-linear-gradient(45deg, rgba(239,156,2,1) 0%, rgba(255,255,255,1) 50%, rgba(239,156,2,1) 100%); /* safari5.1+,chrome10+ */
 	background: -o-linear-gradient(45deg, rgba(239,156,2,1) 0%, rgba(255,255,255,1) 50%, rgba(239,156,2,1) 100%); /* opera 11.10+ */
 	background: -ms-linear-gradient(45deg, rgba(239,156,2,1) 0%, rgba(255,255,255,1) 50%, rgba(239,156,2,1) 100%); /* ie10+ */
 	background: linear-gradient(45deg, rgba(239,156,2,1) 0%, rgba(255,255,255,1) 50%, rgba(239,156,2,1) 100%); /* w3c */
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	line-height: 50px;
-	text-align: center;
-	text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
 }
 
 .white{
-	width: 50px;
-	height: 50px;
-	border-radius: 10px;
 	background: -moz-linear-gradient(45deg, rgba(209,208,212,1) 0%, rgba(209,208,212,1) 1%, rgba(255,255,255,1) 50%, rgba(209,208,212,1) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(209,208,212,1)), color-stop(1%, rgba(209,208,212,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(209,208,212,1))); /* safari4+,chrome */
 	background: -webkit-linear-gradient(45deg, rgba(209,208,212,1) 0%, rgba(209,208,212,1) 1%, rgba(255,255,255,1) 50%, rgba(209,208,212,1) 100%); /* safari5.1+,chrome10+ */
 	background: -o-linear-gradient(45deg, rgba(209,208,212,1) 0%, rgba(209,208,212,1) 1%, rgba(255,255,255,1) 50%, rgba(209,208,212,1) 100%); /* opera 11.10+ */
 	background: -ms-linear-gradient(45deg, rgba(209,208,212,1) 0%, rgba(209,208,212,1) 1%, rgba(255,255,255,1) 50%, rgba(209,208,212,1) 100%); /* ie10+ */
 	background: linear-gradient(45deg, rgba(209,208,212,1) 0%, rgba(209,208,212,1) 1%, rgba(255,255,255,1) 50%, rgba(209,208,212,1) 100%); /* w3c */
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	line-height: 50px;
-	text-align: center;
-	text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
 }
 
 .black{
-	width: 50px;
-	height: 50px;
-	border-radius: 10px;
 	background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(1%, rgba(0,0,0,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
 	background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
 	background: -o-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
 	background: -ms-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* ie10+ */
 	background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%); /* w3c */
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	line-height: 50px;
-	text-align: center;
-	text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
 }
 
 /*内容*/
