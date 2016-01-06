@@ -12,7 +12,12 @@
 	<body>
 		<div class="wrapper">
 			<?php include "header.php" ?>
-			<h2><img src="./img/top.jpg" width="100%" height="auto" alt="トップ画像"></h2>
+			<ul id="top_slider">
+				<li id="top_img1"><img src="./img/top1.jpg" width="100%" height="auto" alt="トップ画像"></li>
+				<li id="top_img2"><img src="./img/top2.jpg" width="100%" height="auto" alt="トップ画像"></li>
+				<li id="top_img3"><img src="./img/top3.jpg" width="100%" height="auto" alt="トップ画像"></li>
+				<li id="top_img4"><img src="./img/top4.jpg" width="100%" height="auto" alt="トップ画像"></li>
+			</ul>
 		</div>
 		
 		<!--<?php include "footer.php"; ?>-->

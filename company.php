@@ -1,3 +1,14 @@
+<?php
+	function company($th,$td){
+		echo "<tr>";
+			echo "<th>".$th."</th>";
+			echo "<td>".$td."</td>";
+		echo "</tr>";
+	}
+	
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,44 +25,15 @@
 			<div>
 			<div class="article">
 				<table>
-					<tr>
-						<th>会社名</th>
-						<td>有限会社　Ｊ&middot;スタイル</td>
-					</tr>
-					<tr>
-						<th>代表取締役</th>
-						<td>森賢哉</td>
-					</tr>
-					<tr>
-						<th>ブランド名</th>
-						<td>J&middot;Trip（ジェイ&middot;トリップ）</td>
-					</tr>
-					<tr>
-						<th>事業内容</th>
-						<td>自動二輪部品&middot;用品の企画/開発/製造/販売</td>
-					</tr>
-					<tr>
-						<th>所在地</th>
-						<td>&#12306;583-0008<br>
-							大阪府藤井寺市大井1-4-32
-						</td>
-					</tr>
-					<tr>
-						<th>電話番号</th>
-						<td>072-952-2220</td>
-					</tr>
-					<tr>
-						<th>FAX</th>
-						<td>072-952-2260</td>
-					</tr>
-					<tr>
-						<th>Mail</th>
-						<td>webmaster&#64;j-trip.co.jp</td>
-					</tr>
-					<tr>
-						<th>取引企業</th>
-						<td>全国オートバイ用品店および卸会社</td>
-					</tr>
+					<?php company("会社名","有限会社　Ｊ&middot;スタイル"); ?>
+					<?php company("代表取締役","森　賢哉"); ?>
+					<?php company("ブランド名","J&middot;Trip（ジェイ&middot;トリップ）"); ?>
+					<?php company("事業内容","自動二輪部品&middot;用品の企画/開発/製造/販売"); ?>
+					<?php company("所在地","&#12306;583-0008<br>大阪府藤井寺市大井1-4-32"); ?>
+					<?php company("電話番号","072-952-2220"); ?>
+					<?php company("FAX","072-952-2260"); ?>
+					<?php company("Mail","webmaster&#64;j-trip.co.jp"); ?>
+					<?php company("取引企業","全国オートバイ用品店および卸会社"); ?>
 				</table>
 				
 			</div>
