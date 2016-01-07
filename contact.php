@@ -55,16 +55,17 @@
 						<tr>
 							<th>Mail</th>
 							<td>
-								<input size="20" type="text" name="email" placeholder="j-trip@a.com">
+								<input size="20" type="text" name="email" placeholder="j-trip@a.com" required>
 							</td>
 						</tr>
 						<tr>
 							<th>お問い合わせ内容</th>
 							<td>
-								<textarea name="お問い合わせ内容" cols="50" rows="5"></textarea>
+								<textarea name="お問い合わせ内容" cols="50" rows="5" required></textarea>
 							</td>
 						</tr>
 					</table>
+					<p class="submit"><input type="submit"></p>
 				</form>
 			</div>
 		</div>

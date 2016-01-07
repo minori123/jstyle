@@ -1,13 +1,22 @@
 <?php
-
+	function pic($x){
+		echo '<div id="pic" class="pic">';
+			echo '<img src="./img/photo/pic'.$x.'.jpg" alt="写真" width="240px" height="150px">';
+		echo '</div>';
+	}
+	
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link type="text/css" rel="stylesheet" href="./css/style.css">
 		<title>（仮）JTRIPオフィシャルサイト</title>
+
+		<link type="text/css" rel="stylesheet" href="./css/style.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+	
 	</head>
 	<body>
 		<?php include "header.php" ?>
@@ -18,15 +27,11 @@
 			</div>
 		</div>
 			<div class="pics clearfix">
-				<div class="pic">
-					<img src="./img/pic0.jpg" alt="写真" width="240px" height="150px">
-				</div>
-				<div class="pic">
-					<img src="./img/pic1.jpg" alt="写真" width="240px" height="150px">
-				</div>
-				<div class="pic">
-					<img src="./img/pic2.jpg" alt="写真" width="240px" height="150px">
-				</div>
+				<?php
+					for( $i=0; $i <= 9; $i++ ){
+						echo pic($i);
+					}
+				?>
 			</div>
 		
 		<?php include "footer.php"; ?>

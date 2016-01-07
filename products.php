@@ -2,9 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link type="text/css" rel="stylesheet" href="./css/style.css">
-		<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 		<title>（仮）JTRIPオフィシャルサイト</title>
+
+		<link type="text/css" rel="stylesheet" href="./css/style.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<?php include "header.php" ?>
@@ -17,17 +21,31 @@
 		
 		<div class="products">
 			<h3>(スタンドデビューさんには)初めてスタンド</h4>
-			<ul class="clearfix">
-				<li>リア</li>
-				<li>フロント</li>
-				<li>ミニバイク</li>
-				<li>オフ・モタード<br>その他</li>
-				<li>オプション</li>
+			<ul class="nav clearfix">
+				<li id="nav_rear" class="base_color">リア</li>
+				<li id="nav_front" class="base_color">フロント</li>
+				<li id="nav_mini" class="base_color">ミニバイク</li>
+				<li id="nav_motard" class="base_color">オフ・モタード<br>その他</li>
+				<li id="nav_option" class="base_color">オプション</li>
 			</ul>
+<!-------------------左下ナビゲーション---------------------->
+			<div class="side_nav base_color">
+				<ul>
+				<li id="lnav_rear">リア</li>
+				<li id="lnav_front">フロント</li>
+				<li id="lnav_mini">ミニバイク</li>
+				<li id="lnav_motard">オフ・モタード<br>その他</li>
+				<li id="lnav_option">オプション</li>
+				</ul>
+			</div>
+<!-------------------トップへ戻るボタン---------------------->			
+			<div id="arrow" class="go_top">
+				<i class="fa fa-arrow-up"></i>
+			</div>
 
 <!-------------------リアスタンド---------------------------->
 			<div class="product">
-				<h3>リア</h3>
+				<h3 id="rear">リア</h3>
 				<div class="prod clearfix">
 					<div class="title clearfix">
 						<h3>ナローローラースタンド【JT-1052】</h3>
@@ -52,10 +70,10 @@
 						<table>
 							<tr>
 								<td class="design green">LG</td>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 								<td class="design orange">QR</td>
 								<td class="design white">WT</td>
-								<td class="design black">BK</td>
+								<td class="design color_w black">BK</td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="購入"></td>
@@ -92,10 +110,10 @@
 						<table>
 							<tr>
 								<td class="design green">LG</td>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 								<td class="design orange">QR</td>
 								<td class="design white">WT</td>
-								<td class="design black">BK</td>
+								<td class="design color_w black">BK</td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="購入"></td>
@@ -132,10 +150,10 @@
 						<table>
 							<tr>
 								<td class="design green">LG</td>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 								<td class="design orange">QR</td>
 								<td class="design white">WT</td>
-								<td class="design black">BK</td>
+								<td class="design color_w black">BK</td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="購入"></td>
@@ -172,10 +190,10 @@
 						<table>
 							<tr>
 								<td class="design green">LG</td>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 								<td class="design orange">QR</td>
 								<td class="design white">WT</td>
-								<td class="design black">BK</td>
+								<td class="design color_w black">BK</td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="購入"></td>
@@ -212,9 +230,9 @@
 						<p>カラー</p>
 						<table>
 							<tr>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 								<td class="design white">WT</td>
-								<td class="design black">BK</td>
+								<td class="design color_w black">BK</td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="購入"></td>
@@ -248,9 +266,9 @@
 						<p>カラー</p>
 						<table>
 							<tr>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 								<td class="design white">WT</td>
-								<td class="design black">BK</td>
+								<td class="design color_w black">BK</td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="購入"></td>
@@ -293,7 +311,7 @@
 				</div>
 				
 <!---------------フロントスタンド---------------->
-				<h3>フロント</h3>
+				<h3 id="front">フロント</h3>
 				<div class="prod clearfix">
 					<div class="title clearfix">
 						<h3>フロントスタンド【JT-116】</h3>
@@ -317,10 +335,10 @@
 						<table>
 							<tr>
 								<td class="design green">LG</td>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 								<td class="design orange">QR</td>
 								<td class="design white">WT</td>
-								<td class="design black">BK</td>
+								<td class="design color_w black">BK</td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="購入"></td>
@@ -355,9 +373,9 @@
 						<p>カラー</p>
 						<table>
 							<tr>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 								<td class="design white">WT</td>
-								<td class="design black">BK</td>
+								<td class="design color_w black">BK</td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="購入"></td>
@@ -389,7 +407,7 @@
 						<p>カラー</p>
 						<table>
 							<tr>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="購入"></td>
@@ -399,7 +417,7 @@
 				</div>
 
 <!---------------ミニスタンド---------------->
-				<h3>ミニ</h3>
+				<h3 id="mini">ミニ</h3>
 				<div class="info">
 					<h3>お知らせ</h3>
 					<p>
@@ -429,16 +447,22 @@
 						<p>カラー</p>
 						<table>
 							<tr>
-								<td class="design red">RG</td>
+								<td class="design red">RD</td>
 								<td class="design white">WT</td>
 							</tr>
 							<tr>
+								<td><input type="submit" value="購入"></td>
 								<td><input type="submit" value="購入"></td>
 							</tr>
 						</table>
 					</div>
 				</div>
+<!---------------オフ・モタード・その他---------------->
+						<h3 id="motard">オフ・モタード・その他</h3>
 
+
+<!---------------オプション---------------->
+						<h3 id="option">オプション</h3>
 
 				
 			</div>
