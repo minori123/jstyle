@@ -21,6 +21,8 @@
 	<body>
 		<?php include "header.php" ?>
 		
+		<?php include "bars.php"; ?>
+		
 		<div class="top">
 			<div class="top_inside">
 				<h3>写真館</h3>

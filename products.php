@@ -13,6 +13,8 @@
 	<body>
 		<?php include "header.php" ?>
 		
+		<?php include "bars.php"; ?>
+		
 		<div class="top">
 			<div class="top_inside">
 				<h3>製品情報</h3>
@@ -21,7 +23,10 @@
 		
 		<div class="products">
 			<h3>(スタンドデビューさんには)初めてスタンド</h4>
-			<ul class="nav clearfix">
+			<div id="p_down" class="p_down base_color">
+				<i class="fa fa-angle-double-down"></i>
+			</div>
+			<ul id="nav" class="nav clearfix">
 				<li id="nav_rear" class="base_color">リア</li>
 				<li id="nav_front" class="base_color">フロント</li>
 				<li id="nav_mini" class="base_color">ミニバイク</li>
@@ -29,7 +34,7 @@
 				<li id="nav_option" class="base_color">オプション</li>
 			</ul>
 <!-------------------左下ナビゲーション---------------------->
-			<div class="side_nav base_color">
+			<div id="side_nav" class="side_nav base_color">
 				<ul>
 				<li id="lnav_rear">リア</li>
 				<li id="lnav_front">フロント</li>

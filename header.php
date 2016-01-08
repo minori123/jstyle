@@ -1,5 +1,5 @@
-		<div class="header">
-			<h1><a href="./index.php"><img src="./img/logo.jpg" alt="jtrip"></a></h1>
+		<div id="header" class="header">
+			<h1><a href="./index.php"><img src="./img/logo.jpg" width="100%" height="auto" alt="jtrip"></a></h1>
 			<nav>
 				<div class="navigation">
 					<ul>

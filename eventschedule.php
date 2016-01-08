@@ -19,6 +19,8 @@
 	<body>
 		<?php include "header.php" ?>
 		
+		<?php include "bars.php"; ?>
+		
 		<div class="top">
 			<div class="top_inside">
 				<h3>イベント</h3>
