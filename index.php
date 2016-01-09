@@ -13,7 +13,7 @@
 	<body>
 		<div class="wrapper">
 		
-			<?php include "header.php" ?>
+			<?php include "header.php"; ?>
 			
 			<?php include "bars.php"; ?>
 			

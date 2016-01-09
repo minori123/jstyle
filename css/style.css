@@ -41,6 +41,7 @@ body{
 	position: absolute;
 	left: 0;
 	opacity: 0.7;
+	z-index: 0;
 }
 
 .bars{
@@ -54,6 +55,7 @@ body{
 	color: #fff;
 	font-size: 2em;
 	text-align: center;
+	z-index: 1;
 }
 
 /*ヘッダー*/
@@ -61,7 +63,7 @@ body{
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 	width: 260px;
 	height: 800px;
 	background: #323232;
@@ -369,9 +371,8 @@ body{
 	content: "●";
 }
 
-.article > table{
+.article table{
 	width: 100%;
-	margin: 30px;
 	border: 1px solid;
 }
 
@@ -447,9 +448,9 @@ body{
 /*会社概要*/
 
 /*お問い合わせ*/
-.article table{
+/*.article table{
 	border: 1px solid;
-}
+}*/
 
 .submit{
 	text-align: center;
@@ -488,29 +489,35 @@ body{
 
 /*------breakPoint700px------*/
 @media screen and (max-width:700px){
+body{
+	padding: 0;
+}
+
 /*ヘッダー*/
 .header{
+	padding: 0 5px 0 0;
 	width: 150px;
 }	
 	
 .navigation li{
 	padding: 10px 0 0 0;
 }
-	
-body{
-	padding: 0;
-}
 
 .top{
-	height: 100px;
+	height: 80px;
 }
 
 .top_inside > h3{
-	font-size: 1em;
+	padding: 0 0 0 60px;
+	font-size: 20px;
 	line-height: 100px;
+	letter-spacing: none;
+}
+/*共通*/
+.top{
+	background: #1a0000;
 }
 
-/*共通*/
 .article{
 	width: 95%;
 }
@@ -526,9 +533,16 @@ body{
 	//font-size: normal;
 }
 
+.base_color{
+	background: #1a0000;
+}
+
 .prodphoto{
 	float: none;
 	width: 100%;
+}
+.prodphoto td{
+	background: #1a0000;
 }
 
 .prodtext{

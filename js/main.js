@@ -50,6 +50,7 @@ $(function(){
 	scroll("#nav_mini","#mini");
 	scroll("#nav_motard","#motard");
 	scroll("#nav_option","#option");
+	scroll("#biginner","#biginner_set");
 	
 	//左下ナビ
 	scroll("#lnav_rear","#rear");
@@ -76,6 +77,7 @@ $(function(){
 			$("#top_slider").hide();
 			$("#p_down").show();
 			$("#nav").hide();
+			$("#side_nav").hide();
 		}else{
 			$("#bars").hide();
 			$("#top_img").hide();
@@ -83,6 +85,7 @@ $(function(){
 			$("#top_slider").show();
 			$("#p_down").hide();
 			$("#nav").show();
+			$("#side_nav").show();
 		}
 	});
 	

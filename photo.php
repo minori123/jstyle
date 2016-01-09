@@ -16,10 +16,11 @@
 		<link type="text/css" rel="stylesheet" href="./css/style.css">
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	
 	</head>
 	<body>
-		<?php include "header.php" ?>
+		<?php include "header.php"; ?>
 		
 		<?php include "bars.php"; ?>
 		

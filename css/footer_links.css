@@ -1,0 +1,48 @@
+@charset "UTF-8";
+body{
+	min-width: 1000px;
+	background: #CFCFCF;
+	font-family: "liberation_sans","Open Sans","ƒqƒ‰ƒMƒmŠpƒS ProN W6","Hiragino Kaku Gothic ProN",Meiryo,ƒƒCƒŠƒI,sans-serif;
+}
+
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+	background: #EED;
+}
+
+.wrapper > h1{
+	margin: 0 0 5px 0;
+}
+
+.wrapper > h2{
+	margin: 0;
+	background: #000;
+	color: #fff;
+}
+
+.container{
+	border: 2px solid;
+}
+
+.container th,td{
+	padding: 10px 0;
+}
+
+.container th{
+	width: 15%;
+}
+
+.footer{
+	margin: 10px 0;
+	text-align: center;
+}
+
+.footer > p{
+	margin: 0;
+}
+
+.footer p:last-child{
+	background: #000;
+	color: #fff;
+}

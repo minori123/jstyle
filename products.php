@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<?php include "header.php" ?>
+		<?php include "header.php"; ?>
 		
 		<?php include "bars.php"; ?>
 		
@@ -22,7 +22,7 @@
 		</div>
 		
 		<div class="products">
-			<h3>(スタンドデビューさんには)初めてスタンド</h4>
+			<h3 id="biginner">(スタンドデビューさんには)初めてスタンド</h4>
 			<div id="p_down" class="p_down base_color">
 				<i class="fa fa-angle-double-down"></i>
 			</div>
@@ -63,7 +63,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -103,7 +103,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -143,7 +143,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -183,7 +183,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -223,7 +223,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -260,7 +260,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -296,7 +296,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -328,7 +328,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -367,7 +367,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -402,7 +402,7 @@
 							<tr>
 								<td><a href="">受け金具</a></td>
 								<td><a href="">オプション</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -441,7 +441,7 @@
 						<table>
 							<tr>
 								<td><a href="">受け金具</a></td>
-								<td><a href="">動画</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
 					</div>
@@ -468,7 +468,9 @@
 
 <!---------------オプション---------------->
 						<h3 id="option">オプション</h3>
-
+						
+<!---------------はじめてスタンド---------------->
+						<h3 id="biginner_set">はじめてスタンド</h3>
 				
 			</div>
 		</div>

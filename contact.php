@@ -2,8 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link type="text/css" rel="stylesheet" href="./css/style.css">
 		<title>（仮）JTRIPオフィシャルサイト</title>
+		<link type="text/css" rel="stylesheet" href="./css/style.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<?php include "header.php" ?>
@@ -21,17 +24,6 @@
 				</p>
 				<form action="" method="">
 					<table>
-						<!--<h3>ご用件</h3>
-						<p>
-							<select name="ご用件">
-									<option value>選択してください</option>
-									<option value="製品についてのご質問・お問い合わせ">製品についてのご質問・お問い合わせ</option>
-									<option value="ホームページについて">ホームページについて</option>
-							</select>
-						</p>
-						<h3>お名前</h3>
-						<p><input size="20" type="text" name="名前" placeholder="山田　太郎" required></p>
-						-->
 						<tr>
 							<th>ご用件</th>
 							<td>
