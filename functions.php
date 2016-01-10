@@ -11,7 +11,6 @@
 				echo '<table>';
 					echo '<tr>';
 						echo '<td><a href="./bracket.php">受け金具</a></td>';
-						echo '<td><a href="./options_rear.php">オプション</a></td>';
 						echo '<td><a href="./howtouse.php">動画</a></td>';
 					echo '</tr>';
 				echo '</table>';
@@ -43,7 +42,6 @@
 				echo '<table>';
 					echo '<tr>';
 						echo '<td><a href="./bracket.php">受け金具</a></td>';
-						echo '<td><a href="./options_rear.php">オプション</a></td>';
 						echo '<td><a href="./howtouse.php">動画</a></td>';
 					echo '</tr>';
 				echo '</table>';
@@ -106,6 +104,47 @@
 		echo '</div>';
 	}
 
+	function prod_4($title,$price,$pic,$cap,$s_title,$introduction,$caution){
+		echo '<div class="prod clearfix">';
+			echo '<div class="title clearfix">';
+				echo '<h3>'.$title.'</h3>';
+				echo '<h3>'.$price.'</h3>';
+			echo '</div>';
+			echo '<div class="prodphoto">';
+				echo '<img src="./img/prod/'.$pic.'" width="100%" height="auto" alt="'.$title.'">';
+				echo '<p>'.$cap.'</p>';
+				echo '<table>';
+					echo '<tr>';
+						echo '<td><a href="./bracket.php">受け金具</a></td>';
+						echo '<td><a href="./options_rear.php">オプション</a></td>';
+						echo '<td><a href="./howtouse.php">動画</a></td>';
+					echo '</tr>';
+				echo '</table>';
+			echo '</div>';
+			echo '<div class="prodtext">';
+				echo '<p>'.$s_title.'</p>';
+				echo '<p>'.$introduction.'</p>';
+				echo '<p>'.$caution.'</p>';
+				echo '<p>カラー</p>';
+				echo '<table>';
+					echo '<tr>';
+						echo '<td class="design green">LG</td>';
+						echo '<td class="design red">RD</td>';
+						echo '<td class="design white">WT</td>';
+						echo '<td class="design color_w black">BK</td>';
+					echo '</tr>';
+					echo '<tr>';
+						echo '<td><input type="submit" value="購入"></td>';
+						echo '<td><input type="submit" value="購入"></td>';
+						echo '<td><input type="submit" value="購入"></td>';
+						echo '<td><input type="submit" value="購入"></td>';
+					echo '</tr>';
+				echo '</table>';
+			echo '</div>';
+		echo '</div>';
+	}
+	
+	
 	function prod_5($title,$price,$pic,$cap,$s_title,$introduction,$caution){
 		echo '<div class="prod clearfix">';
 			echo '<div class="title clearfix">';

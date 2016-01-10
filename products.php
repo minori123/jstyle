@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -86,7 +86,7 @@
 					);
 				?>
 				<?php 
-					prod_5(
+					prod_4(
 					'ワイドショートローラースタンド【JT-125P】',
 					'12,000円(税別)',
 					'jt_125p.jpg',
@@ -129,8 +129,8 @@
 						<p>受け金具は付属していません。用途に合わせて別途お買い求めください。</p>
 						<table>
 							<tr>
-								<td><a href="">受け金具</a></td>
-								<td><a href="">オプション</a></td>
+								<td><a href="./bracket.php">受け金具</a></td>
+								<td><a href="./options_rear.php">オプション</a></td>
 								<td><a href="./howtouse.php">動画</a></td>
 							</tr>
 						</table>
@@ -153,28 +153,77 @@
 <!---------------フロントスタンド---------------->
 
 				<h3 id="front">フロント</h3>
-				<?php 
-					prod_5(
-					'フロントスタンド【JT-116】',
-					'19,500円(税別)',
-					'jt_116.jpg',
-					'&nbsp;',
-					'安定感で選ぶなら「フロントスタンド」',
-					'ステアリングステムにφ13ｍｍ以上の穴があいている、アメリカン・オフロード以外の車種であればほぼ全機種をリフト可能なフロントスタンドです。',
-					'**ご注意**<br>構造上リフトしたまま三又を外す事は出来ません。また一部制約のある車種があります。'
-					);
-				?>
-				<?php 
-					prod_3(
-					'フォークアップスタンド【JT-113】',
-					'11,750円(税別)',
-					'jt_113.jpg',
-					'&nbsp;',
-					'優れた汎用性であらゆるマシンをリフトする「フォークアップスタンド」',
-					'フォークボトムにφ8ｍｍ以上の穴があいていればほぼ全ての車種をリフト可能なフロントスタンドです。<br>左右の幅調整は無段階・左右とも独立して高さ調整も無段階です。（実用新案登録　第3074529号）',
-					'**ご注意**<br>構造上リフトしたままフォークを外す事は出来ません。フォークのOHにはフロントスタンドJT-116をお勧めいたします。'
-					);
-				?>
+				<div class="prod clearfix">
+					<div class="title clearfix">
+						<h3>フロントスタンド【JT-116】</h3>
+						<h3>19,500円(税別)</h3>
+					</div>
+					<div class="prodphoto">
+						<img src="./img/prod/jt_116.jpg" width="100%" height="auto" alt="片持ちローラースタンド">
+						<table>
+							<tr>
+								<td><a href="./bracket.php">受け金具</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
+							</tr>
+						</table>
+					</div>
+					<div class="prodtext">
+						<p>安定感で選ぶなら「フロントスタンド」</p>
+						<p>ステアリングステムにφ13ｍｍ以上の穴があいている、アメリカン・オフロード以外の車種であればほぼ全機種をリフト可能なフロントスタンドです。</p>
+						<p>**ご注意**<br>構造上リフトしたまま三又を外す事は出来ません。また一部制約のある車種があります。</p>
+						<p>カラー</p>
+						<table>
+							<tr>
+								<td class="design green">LG</td>
+								<td class="design red">RD</td>
+								<td class="design orange">QR</td>
+								<td class="design white">WT</td>
+								<td class="design color_w black">BK</td>
+							</tr>
+							<tr>
+								<td><input type="submit" value="購入"></td>
+								<td><input type="submit" value="購入"></td>
+								<td><input type="submit" value="購入"></td>
+								<td><input type="submit" value="購入"></td>
+								<td><input type="submit" value="購入"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="prod clearfix">
+					<div class="title clearfix">
+						<h3>フォークアップスタンド【JT-113】</h3>
+						<h3>11,750円(税別)</h3>
+					</div>
+					<div class="prodphoto">
+						<img src="./img/prod/jt_113.jpg" width="100%" height="auto" alt="片持ちローラースタンド">
+						<table>
+							<tr>
+								<td><a href="./bracket.php">受け金具</a></td>
+								<td><a href="./howtouse.php">動画</a></td>
+							</tr>
+						</table>
+					</div>
+					<div class="prodtext">
+						<p>優れた汎用性であらゆるマシンをリフトする「フォークアップスタンド」</p>
+						<p>フォークボトムにφ8ｍｍ以上の穴があいていればほぼ全ての車種をリフト可能なフロントスタンドです。<br>左右の幅調整は無段階・左右とも独立して高さ調整も無段階です。（実用新案登録　第3074529号）</p>
+						<p>**ご注意**<br>構造上リフトしたままフォークを外す事は出来ません。フォークのOHにはフロントスタンドJT-116をお勧めいたします。</p>
+						<p>カラー</p>
+						<table>
+							<tr>
+								<td class="design red">RD</td>
+								<td class="design white">WT</td>
+								<td class="design color_w black">BK</td>
+							</tr>
+							<tr>
+								<td><input type="submit" value="購入"></td>
+								<td><input type="submit" value="購入"></td>
+								<td><input type="submit" value="購入"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
 				<?php 
 					prod_1_red(
 					'DUCATI専用フロントスタンド【JT-113DRD】',
@@ -204,6 +253,26 @@
 					'ミニバイク専用設計「ミニフロントスタンド」',
 					'ステアリングステムにφ13ｍｍ以上の穴があいている、アメリカン・オフロード以外の車種であればほぼ全機種をリフト可能なフロントスタンドです。',
 					'**ご注意**<br>KSR50/80/110やエイプ50/100に使用する場合別売りブラケットが必要です。<br>（XR50/100モタード専用ブラケットは販売終了しました）<br>構造上リフトしたまま三又を外す事は出来ません。'
+					);
+				?>
+				<?php 
+					prod_2(
+					'フォークアップスタンド【JT-113S】',
+					'11,000円(税別)',
+					'jt_113s.jpg',
+					'優れた汎用性であらゆるマシンをリフトする「フォークアップスタンド」',
+					'フォークボトムにφ8ｍｍ以上の穴があいていればほぼ全ての車種をリフト可能なフロントスタンドです。<br>左右の幅調整は無段階・左右とも独立して高さ調整も無段階です。 （実用新案登録　第３０７４５２９号）',
+					'**ご注意**<br>構造上リフトしたままフォークを外す事は出来ません。フォークのOHにはフロントスタンドJT-116Sをお勧めいたします。'
+					);
+				?>
+				<?php 
+					prod_2(
+					'ミニワンタッチスタンド【JT-115】',
+					'8,500円(税別)',
+					'jt_115.jpg',
+					'簡単な構造ながら必要にして充分。<br>「ミニワンタッチスタンド」',
+					'高さ３段階調整機構付きにすることにより、エイプやKSR、18インチまでのフルサイズの車種に適合。<br>ホイール径8インチ～18インチまで対応。先端部分のボスはベースがφ13で、φ15・φ17・φ22のカラーが付属します。',
+					'**ご注意**<br>ノーマルフェンダーのモンキー・ゴリラ・エイプ・ＸＲモタードはフロントフェンダーを取り外す必要があります。'
 					);
 				?>
 
