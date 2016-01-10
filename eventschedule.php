@@ -1,14 +1,3 @@
-<?php
-	function schedule($date,$place,$event){
-		echo '<tr>';
-			echo '<td class="date">'.$date.'</td>';
-			echo '<td class="place">'.$place.'</td>';
-			echo '<td class="event">'.$event.'</td>';
-		echo '</tr>';
-	}
-
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -31,6 +20,7 @@
 		</div>
 		<div class="article">
 			<p class="eventtitle">2015年イベントスケジュール</p>
+			<?php include "functions.php" ?>
 			<table>
 				<?php schedule("7月4日（土）","神奈川","ナップス横浜店"); ?>
 				<?php schedule("7月5日（土）","神奈川","ナップス港北店"); ?>

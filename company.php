@@ -1,14 +1,3 @@
-<?php
-	function company($th,$td){
-		echo "<tr>";
-			echo "<th>".$th."</th>";
-			echo "<td>".$td."</td>";
-		echo "</tr>";
-	}
-	
-
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -20,7 +9,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<?php include "header.php" ?>
+		<?php include "header.php"; ?>
 		
 		<?php include "bars.php"; ?>
 		
@@ -29,6 +18,7 @@
 				<h3>会社案内</h3>
 			<div>
 			<div class="article">
+				<?php include "functions.php"; ?>
 				<table>
 					<?php company("会社名","有限会社　Ｊ&middot;スタイル"); ?>
 					<?php company("代表取締役","森　賢哉"); ?>

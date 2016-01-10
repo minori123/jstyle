@@ -49,7 +49,7 @@ $(function(){
 	scroll("#nav_front","#front");
 	scroll("#nav_mini","#mini");
 	scroll("#nav_motard","#motard");
-	scroll("#nav_option","#option");
+	scroll("#nav_others","#others");
 	scroll("#biginner","#biginner_set");
 	
 	//左下ナビ
@@ -57,7 +57,7 @@ $(function(){
 	scroll("#lnav_front","#front");
 	scroll("#lnav_mini","#mini");
 	scroll("#lnav_motard","#motard");
-	scroll("#lnav_option","#option");
+	scroll("#lnav_others","#others");
 
 	//写真館
 	/*$("#pic").click(function(event){

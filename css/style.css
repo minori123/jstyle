@@ -257,6 +257,10 @@ body{
 	margin: 10px 0 0 0;
 }
 
+.prodphoto p{
+	margin: 0;
+}
+
 .prodphoto td {
 	width: 30%;
 	margin: 0 1%;
@@ -360,6 +364,51 @@ body{
 	background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(3,3,3,1) 51%, rgba(255,255,255,1) 100%); /* w3c */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */
 }
+/*受け具*/
+.bracket{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.bracket > h3{
+	margin: 20px 0 0 0;
+	border: 2px solid;
+	border-radius: 10px;
+}
+
+.bracket .prodphoto{
+	float: left;
+	width: 30%;
+	margin-bottom: 5px;
+}
+
+.bracket .prodphoto p{
+	margin: 0;
+}
+
+.bracket img{
+	width: 100%;
+	height: auto;
+}
+
+.bracket .prodtext{
+	float: left;
+	margin: 10px 0 0 1.5%;
+	width: calc(70% - 1.5%);
+}
+
+.bracket table{
+	border: 1px solid;
+}
+
+.bracket td:not(:first-child){
+	border-left: 1px solid;
+	//border-bottom: 1px solid;
+}
+
+.bracket td{
+	border-bottom: 1px solid;
+}
 
 /*共通*/
 .article{
@@ -373,6 +422,7 @@ body{
 
 .article table{
 	width: 100%;
+	margin: 20px 0;
 	border: 1px solid;
 }
 
@@ -546,6 +596,17 @@ body{
 }
 
 .prodtext{
+	float: none;
+	width: 100%;
+}
+
+/*受け具*/
+.bracket .prodphoto{
+	float: none;
+	width: 100%;
+}
+
+.bracket .prodtext{
 	float: none;
 	width: 100%;
 }
